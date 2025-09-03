@@ -9,30 +9,114 @@
 </head>
 
 <body>
-    <h1>Hola mundooo :p</h1><!--TITULOS-->
-    <h2>hola lili</h2>
-    <h3>hola prin</h3>
-    <h4>hola top</h4>
-    <h5>hola txt</h5>
-    <h6>hola hlf alive</h6>
-    <p><span>Lorem</span> <!--destaca una palabra dentro de una conjunto--> ipsum dolor sit amet consectetur adipisicing elit. <br><!--SALTO DE LINEA-->Asperiores quos saepe illum molestiae aliquam totam,
+    <header>
+            <h1>Hola mundooo :p</h1><!--TITULOS-->
+            <nav>
+                
+            </nav>
+    </header>
+    <main>
+        <section>
+        <h2>hola lili</h2>
+        <h3>hola prin</h3>
+        <h4>hola top</h4>
+        <h5>hola txt</h5>
+        <h6>hola hlf alive</h6>
+        <p><span>Lorem</span> <!--destaca una palabra dentro de una conjunto--> ipsum dolor sit amet consectetur adipisicing elit. <br><!--SALTO DE LINEA-->Asperiores quos saepe illum molestiae aliquam totam,
         vitae natus blanditiis recusandae maiores earum debitis omnis et molestias soluta nemo officiis, modi quisquam.
-    </p><!--PARRAFO-->
-
-    <!--LISTAS ORDENADAS NUMERADA-->
-    <ol>
-        <li>tyler</li>
-        <li>josh</li>
-        <li>joshler</li>
-    </ol>
-    <!--LISTAS DESORDENADAS-->
-    <ul>
-        <li>tyler</li>
-        <li>josh</li>
-    </ul>
-    <div> IMAGENES</div>
-    <img src="https://nolae.es/cdn/shop/articles/taehyun-txt-profil-781026.jpg?v=1739355150&width=1920" alt="taehyun" width="500px"/>
-    <img src="./Imagenes/Untitled714_20230307211148.png" alt="taehyun" width="500px">
+        </p><!--PARRAFO-->
+        </section>
+    
+        <section>
+            <!--LISTAS ORDENADAS NUMERADA-->
+            <ol>    
+            <li>tyler</li>
+            <li>josh</li>
+            <li>joshler</li>
+            </ol>
+            <!--LISTAS DESORDENADAS-->
+            <ul>
+            <li>tyler</li>
+            <li>josh</li>
+            </ul>
+            <div> IMAGENES</div>
+            <img src="https://nolae.es/cdn/shop/articles/taehyun-txt-profil-781026.jpg?v=1739355150&width=1920" alt="taehyun" width="500px"/>
+            <img src="./Imagenes/Untitled714_20230307211148.png" alt="taehyun" width="500px">
+        </section>
+        <section><!--ATRIBUTOS OBLIGATORIOS-->
+            <form action="./Contacto.html" method="get" autocomplete="off" id="form">
+                <h1>Formulario de Contacto</h1>
+                <div>
+                    <label for="name">
+                    Nombre:
+                    <input type="text" id="name" name="name" placeholder="Nombre"/>
+                    </label>
+                </div>
+                <div>
+                    <label for="country">
+                        Pais:
+                        <select name="country" id="country">
+                            <option value="">Selecciones una Opcion</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Colombia">Colombia</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label for="email">
+                    Email:
+                    <input type="email" id="email" name="email" placeholder="Email"/>
+                </label>
+                </div>
+                <div>
+                    <label for="number">
+                    Numero:
+                    <input type="number" id="number" name="number" placeholder="Numero"/>
+                </label>
+                </div>
+                <div>
+                    <label for="password">
+                    Contraseña:
+                    <input type="password" id="password" name="password" placeholder="Contraseña"/>
+                </label>
+                </div>
+                <div>
+                    <label for="date">
+                    Fecha:
+                    <input type="date" id="birthdate" name="birthdate" placeholder="Fecha de Nacimiento"/>
+                </label>
+                </div>
+                <div>
+                    <label for="color">
+                    Color:
+                    <input type="color" id="color" name="color" placeholder="Color"/>
+                </label>
+                </div>
+                <div>
+                    <label for="file">
+                    Archivo:
+                    <input type="file" id="file" name="file" placeholder="Archivo"/>
+                </label>
+                </div>
+                <div>
+                    <label for="message">
+                    Mensaje:
+                    <textarea name="message" id="message" placeholder="Mensaje" ></textarea>
+                    </label>
+                </div>
+                <div>
+                    <label for="checkbox">
+                    Acepto los terminos y condiciones
+                    <input type="checkbox" id="checkbox" name="checkbox"/>
+                    </label>
+                </div>
+                
+            </form>
+            <button type="submit" form="form">ENVIAR</button>
+            <button type="reset" form="form">CANCELAR</button>
+        </section>
+    </main>
 </body>
 
 </html>
